@@ -16,3 +16,4 @@ C:\Coding\Csharp\Projects\HiTESS.FemEngine\HiTESS.FemEngine.Adapter\obj\Debug\ne
 C:\Coding\Csharp\Projects\HiTESS.FemEngine\HiTESS.FemEngine.Adapter\obj\Debug\net8.0\HiTESS.FemEngine.Adapter.pdb
 C:\Coding\Csharp\Projects\HiTESS.FemEngine\HiTESS.FemEngine.Adapter\obj\Debug\net8.0\HiTESS.FemEngine.Adapter.genruntimeconfig.cache
 C:\Coding\Csharp\Projects\HiTESS.FemEngine\HiTESS.FemEngine.Adapter\obj\Debug\net8.0\ref\HiTESS.FemEngine.Adapter.dll
+C:\Coding\Csharp\Projects\HiTESS.FemEngine\HiTESS.FemEngine.Adapter\obj\Debug\net8.0\HiTESS.FemEngine.Adapter.sourcelink.json

@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\Coding\\Csharp\\Projects\\HiTESS.FemEngine\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4CB05D78-6F07-4B60-B6C9-58111C4724A9}|HiTESS.FemEngine\\HiTESS.FemEngine.Core.csproj|c:\\coding\\csharp\\projects\\hitess.femengine\\hitess.femengine\\execution\\nastranexecutionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CB05D78-6F07-4B60-B6C9-58111C4724A9}|HiTESS.FemEngine\\HiTESS.FemEngine.Core.csproj|solutionrelative:hitess.femengine\\execution\\nastranexecutionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CB05D78-6F07-4B60-B6C9-58111C4724A9}|HiTESS.FemEngine\\HiTESS.FemEngine.Core.csproj|c:\\coding\\csharp\\projects\\hitess.femengine\\hitess.femengine\\entities\\femodelcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CB05D78-6F07-4B60-B6C9-58111C4724A9}|HiTESS.FemEngine\\HiTESS.FemEngine.Core.csproj|solutionrelative:hitess.femengine\\entities\\femodelcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91455F07-403C-41A8-9482-9F0D3BC39BEB}|HiTESS.FemEngine.Adapter\\HiTESS.FemEngine.Adapter.csproj|c:\\coding\\csharp\\projects\\hitess.femengine\\hitess.femengine.adapter\\f06parser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91455F07-403C-41A8-9482-9F0D3BC39BEB}|HiTESS.FemEngine.Adapter\\HiTESS.FemEngine.Adapter.csproj|solutionrelative:hitess.femengine.adapter\\f06parser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{91455F07-403C-41A8-9482-9F0D3BC39BEB}|HiTESS.FemEngine.Adapter\\HiTESS.FemEngine.Adapter.csproj|c:\\coding\\csharp\\projects\\hitess.femengine\\hitess.femengine.adapter\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{91455F07-403C-41A8-9482-9F0D3BC39BEB}|HiTESS.FemEngine.Adapter\\HiTESS.FemEngine.Adapter.csproj|solutionrelative:hitess.femengine.adapter\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4CB05D78-6F07-4B60-B6C9-58111C4724A9}|HiTESS.FemEngine\\HiTESS.FemEngine.Core.csproj|c:\\coding\\csharp\\projects\\hitess.femengine\\hitess.femengine\\builders\\componentwizardbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4CB05D78-6F07-4B60-B6C9-58111C4724A9}|HiTESS.FemEngine\\HiTESS.FemEngine.Core.csproj|solutionrelative:hitess.femengine\\builders\\componentwizardbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{91455F07-403C-41A8-9482-9F0D3BC39BEB}|HiTESS.FemEngine.Adapter\\HiTESS.FemEngine.Adapter.csproj|c:\\coding\\csharp\\projects\\hitess.femengine\\hitess.femengine.adapter\\f06parser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{91455F07-403C-41A8-9482-9F0D3BC39BEB}|HiTESS.FemEngine.Adapter\\HiTESS.FemEngine.Adapter.csproj|solutionrelative:hitess.femengine.adapter\\f06parser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{91455F07-403C-41A8-9482-9F0D3BC39BEB}|HiTESS.FemEngine.Adapter\\HiTESS.FemEngine.Adapter.csproj|c:\\coding\\csharp\\projects\\hitess.femengine\\hitess.femengine.adapter\\models\\payloadmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -90,7 +98,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "ComponentWizardBuilder.cs",
               "DocumentMoniker": "C:\\Coding\\Csharp\\Projects\\HiTESS.FemEngine\\HiTESS.FemEngine\\Builders\\ComponentWizardBuilder.cs",
               "RelativeDocumentMoniker": "HiTESS.FemEngine\\Builders\\ComponentWizardBuilder.cs",
@@ -98,25 +106,24 @@
               "RelativeToolTip": "HiTESS.FemEngine\\Builders\\ComponentWizardBuilder.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAQwBsAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-18T02:10:38.021Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-18T02:10:38.021Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Coding\\Csharp\\Projects\\HiTESS.FemEngine\\HiTESS.FemEngine.Adapter\\Program.cs",
               "RelativeDocumentMoniker": "HiTESS.FemEngine.Adapter\\Program.cs",
               "ToolTip": "C:\\Coding\\Csharp\\Projects\\HiTESS.FemEngine\\HiTESS.FemEngine.Adapter\\Program.cs",
               "RelativeToolTip": "HiTESS.FemEngine.Adapter\\Program.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAC0AAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAALoAAAAAAAAAAAAYwOwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-18T01:10:20.284Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "PayloadModels.cs",
               "DocumentMoniker": "C:\\Coding\\Csharp\\Projects\\HiTESS.FemEngine\\HiTESS.FemEngine.Adapter\\Models\\PayloadModels.cs",
               "RelativeDocumentMoniker": "HiTESS.FemEngine.Adapter\\Models\\PayloadModels.cs",
@@ -134,20 +141,46 @@
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NastranExecutionService.cs",
+              "DocumentMoniker": "C:\\Coding\\Csharp\\Projects\\HiTESS.FemEngine\\HiTESS.FemEngine\\Execution\\NastranExecutionService.cs",
+              "RelativeDocumentMoniker": "HiTESS.FemEngine\\Execution\\NastranExecutionService.cs",
+              "ToolTip": "C:\\Coding\\Csharp\\Projects\\HiTESS.FemEngine\\HiTESS.FemEngine\\Execution\\NastranExecutionService.cs",
+              "RelativeToolTip": "HiTESS.FemEngine\\Execution\\NastranExecutionService.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAYwGIAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T04:58:07.628Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FeModelContext.cs",
+              "DocumentMoniker": "C:\\Coding\\Csharp\\Projects\\HiTESS.FemEngine\\HiTESS.FemEngine\\Entities\\FeModelContext.cs",
+              "RelativeDocumentMoniker": "HiTESS.FemEngine\\Entities\\FeModelContext.cs",
+              "ToolTip": "C:\\Coding\\Csharp\\Projects\\HiTESS.FemEngine\\HiTESS.FemEngine\\Entities\\FeModelContext.cs",
+              "RelativeToolTip": "HiTESS.FemEngine\\Entities\\FeModelContext.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAA1wEUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T04:57:58.582Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
               "Title": "F06Parser.cs",
               "DocumentMoniker": "C:\\Coding\\Csharp\\Projects\\HiTESS.FemEngine\\HiTESS.FemEngine.Adapter\\F06Parser.cs",
               "RelativeDocumentMoniker": "HiTESS.FemEngine.Adapter\\F06Parser.cs",
               "ToolTip": "C:\\Coding\\Csharp\\Projects\\HiTESS.FemEngine\\HiTESS.FemEngine.Adapter\\F06Parser.cs",
               "RelativeToolTip": "HiTESS.FemEngine.Adapter\\F06Parser.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABEAAABJAAAAAAAAAA==",
+              "ViewState": "AgIAACsAAAAAAAAAAAAYwC8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-18T07:42:28.664Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "BdfBuilder.cs",
               "DocumentMoniker": "C:\\Coding\\Csharp\\Projects\\HiTESS.FemEngine\\HiTESS.FemEngine\\Exporters\\BdfBuilder.cs",
               "RelativeDocumentMoniker": "HiTESS.FemEngine\\Exporters\\BdfBuilder.cs",
@@ -159,7 +192,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "UnionFind.cs",
               "DocumentMoniker": "C:\\Coding\\Csharp\\Projects\\HiTESS.FemEngine\\HiTESS.FemEngine\\Utils\\UnionFind.cs",
               "RelativeDocumentMoniker": "HiTESS.FemEngine\\Utils\\UnionFind.cs",
@@ -171,7 +204,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "SpatialHash.cs",
               "DocumentMoniker": "C:\\Coding\\Csharp\\Projects\\HiTESS.FemEngine\\HiTESS.FemEngine\\Utils\\SpatialHash.cs",
               "RelativeDocumentMoniker": "HiTESS.FemEngine\\Utils\\SpatialHash.cs",
@@ -183,7 +216,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "SizeUtils.cs",
               "DocumentMoniker": "C:\\Coding\\Csharp\\Projects\\HiTESS.FemEngine\\HiTESS.FemEngine\\Utils\\SizeUtils.cs",
               "RelativeDocumentMoniker": "HiTESS.FemEngine\\Utils\\SizeUtils.cs",
@@ -195,7 +228,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "PropertyDimensionHelper.cs",
               "DocumentMoniker": "C:\\Coding\\Csharp\\Projects\\HiTESS.FemEngine\\HiTESS.FemEngine\\Utils\\PropertyDimensionHelper.cs",
               "RelativeDocumentMoniker": "HiTESS.FemEngine\\Utils\\PropertyDimensionHelper.cs",
@@ -207,7 +240,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "ProjectionUtils.cs",
               "DocumentMoniker": "C:\\Coding\\Csharp\\Projects\\HiTESS.FemEngine\\HiTESS.FemEngine\\Utils\\ProjectionUtils.cs",
               "RelativeDocumentMoniker": "HiTESS.FemEngine\\Utils\\ProjectionUtils.cs",
@@ -219,7 +252,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "BdfExporter.cs",
               "DocumentMoniker": "C:\\Coding\\Csharp\\Projects\\HiTESS.FemEngine\\HiTESS.FemEngine\\Exporters\\BdfExporter.cs",
               "RelativeDocumentMoniker": "HiTESS.FemEngine\\Exporters\\BdfExporter.cs",
@@ -231,7 +264,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Vector3dUtils.cs",
               "DocumentMoniker": "C:\\Coding\\Csharp\\Projects\\HiTESS.FemEngine\\HiTESS.FemEngine\\Utils\\Vector3dUtils.cs",
               "RelativeDocumentMoniker": "HiTESS.FemEngine\\Utils\\Vector3dUtils.cs",
@@ -243,7 +276,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "Point3dUtils.cs",
               "DocumentMoniker": "C:\\Coding\\Csharp\\Projects\\HiTESS.FemEngine\\HiTESS.FemEngine\\Utils\\Point3dUtils.cs",
               "RelativeDocumentMoniker": "HiTESS.FemEngine\\Utils\\Point3dUtils.cs",
@@ -255,7 +288,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "GeometryUtils.cs",
               "DocumentMoniker": "C:\\Coding\\Csharp\\Projects\\HiTESS.FemEngine\\HiTESS.FemEngine\\Utils\\GeometryUtils.cs",
               "RelativeDocumentMoniker": "HiTESS.FemEngine\\Utils\\GeometryUtils.cs",
@@ -267,7 +300,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "ElementSpatialHash.cs",
               "DocumentMoniker": "C:\\Coding\\Csharp\\Projects\\HiTESS.FemEngine\\HiTESS.FemEngine\\Utils\\ElementSpatialHash.cs",
               "RelativeDocumentMoniker": "HiTESS.FemEngine\\Utils\\ElementSpatialHash.cs",
@@ -279,7 +312,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "BdfFormatFields.cs",
               "DocumentMoniker": "C:\\Coding\\Csharp\\Projects\\HiTESS.FemEngine\\HiTESS.FemEngine\\Exporters\\BdfFormatFields.cs",
               "RelativeDocumentMoniker": "HiTESS.FemEngine\\Exporters\\BdfFormatFields.cs",

@@ -58,7 +58,27 @@ namespace HiTESS.FemEngine.Adapter.Models
   public class ElementResultData
   {
     [JsonPropertyName("elementId")] public int ElementId { get; set; }
+    [JsonPropertyName("dist")]      public double Dist { get; set; }
+    [JsonPropertyName("sxc")]       public double SXC { get; set; }
+    [JsonPropertyName("sxd")]       public double SXD { get; set; }
+    [JsonPropertyName("sxe")]       public double SXE { get; set; }
+    [JsonPropertyName("sxf")]       public double SXF { get; set; }
+    [JsonPropertyName("sMax")]      public double SMax { get; set; }
+    [JsonPropertyName("sMin")]      public double SMin { get; set; }
     [JsonPropertyName("maxStress")] public double MaxStress { get; set; }
+  }
+
+  public class BeamForceData
+  {
+    [JsonPropertyName("elementId")]      public int ElementId { get; set; }
+    [JsonPropertyName("dist")]           public double Dist { get; set; }
+    [JsonPropertyName("bendingMoment1")] public double BendingMoment1 { get; set; }
+    [JsonPropertyName("bendingMoment2")] public double BendingMoment2 { get; set; }
+    [JsonPropertyName("shearForce1")]    public double ShearForce1 { get; set; }
+    [JsonPropertyName("shearForce2")]    public double ShearForce2 { get; set; }
+    [JsonPropertyName("axialForce")]     public double AxialForce { get; set; }
+    [JsonPropertyName("torque")]         public double Torque { get; set; }
+    [JsonPropertyName("warpingTorque")]  public double WarpingTorque { get; set; }
   }
 
   public class ResultPayload
@@ -70,7 +90,8 @@ namespace HiTESS.FemEngine.Adapter.Models
     [JsonPropertyName("inertia")] public double Inertia { get; set; }
     [JsonPropertyName("message")] public string Message { get; set; }
 
-    [JsonPropertyName("nodeResults")] public List<NodeResultData> NodeResults { get; set; }
+    [JsonPropertyName("nodeResults")]    public List<NodeResultData> NodeResults { get; set; }
     [JsonPropertyName("elementResults")] public List<ElementResultData> ElementResults { get; set; }
+    [JsonPropertyName("forceResults")]   public List<BeamForceData> ForceResults { get; set; }
   }
 }

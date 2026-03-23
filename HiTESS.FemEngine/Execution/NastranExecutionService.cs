@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
-using System.Linq;
 
 namespace HiTESS.FemEngine.Core.Execution
 {
@@ -13,11 +12,8 @@ namespace HiTESS.FemEngine.Core.Execution
   public static class NastranExecutionService
   {
     /// <summary>
-    /// BDF 파일을 cmd.exe 환경 변수를 통해 Nastran으로 해석하고 결과를 분석합니다.
+    /// BDF 파일을 솔버로 해석하고 결과를 분석합니다.
     /// </summary>
-    /// <param name="bdfFilePath">실행할 BDF 파일의 절대 경로</param>
-    /// <param name="log">로깅 델리게이트</param>
-    /// <returns>해석 성공(FATAL 없음) 시 true, 실패 시 false 반환</returns>
     public static bool RunAndAnalyze(string bdfFilePath, Action<string> log)
     {
       if (!File.Exists(bdfFilePath))
@@ -33,7 +29,6 @@ namespace HiTESS.FemEngine.Core.Execution
 
       try
       {
-        // 1. Nastran 프로세스 실행 설정 (cmd.exe를 통해 시스템 환경 변수에 등록된 nastran 실행)
         var psi = new ProcessStartInfo
         {
           FileName = "cmd.exe",
@@ -45,17 +40,13 @@ namespace HiTESS.FemEngine.Core.Execution
 
         using (var process = Process.Start(psi))
         {
-          if (process != null)
-          {
-            process.WaitForExit(); // 해석이 끝날 때까지 대기
-          }
+          process?.WaitForExit();
         }
 
         log($"[Nastran Run] 프로세스 종료됨. 결과 분석을 시작합니다...");
 
-        // 2. 결과 파일(.f06) 분석
         string f06FilePath = Path.ChangeExtension(bdfFilePath, ".f06");
-        return AnalyzeF06File(f06FilePath, log);
+        return AnalyzeF06FileStream(f06FilePath, log);
       }
       catch (Exception ex)
       {
@@ -65,54 +56,73 @@ namespace HiTESS.FemEngine.Core.Execution
     }
 
     /// <summary>
-    /// .f06 파일을 읽어 FATAL MESSAGE 유무를 확인하고 위아래 문맥을 추출합니다.
+    /// 원형 버퍼(Circular Buffer)를 활용하여 메모리 낭비 없이 FATAL 에러 주변 컨텍스트를 추출합니다.
     /// </summary>
-    private static bool AnalyzeF06File(string f06FilePath, Action<string> log)
+    private static bool AnalyzeF06FileStream(string f06FilePath, Action<string> log)
     {
       if (!File.Exists(f06FilePath))
       {
-        log($"[실패] .f06 결과 파일이 생성되지 않았습니다. (해석 실패 또는 환경변수 PATH 문제 의심)");
+        log($"[실패] .f06 결과 파일이 생성되지 않았습니다.");
         return false;
       }
 
-      var lines = File.ReadAllLines(f06FilePath);
-      var fatalLineIndices = new List<int>();
+      int contextRange = 5;
+      // 과거 로그 5줄을 보관하는 원형 큐
+      var previousLines = new Queue<string>(contextRange);
+      int fatalCount = 0;
+      int linesToPrintAfterFatal = 0;
+      int currentLineNumber = 0;
 
-      // "FATAL" 키워드 검색
-      for (int i = 0; i < lines.Length; i++)
+      foreach (var line in File.ReadLines(f06FilePath))
       {
-        if (lines[i].Contains("FATAL MESSAGE") || lines[i].Contains("*** FATAL"))
+        currentLineNumber++;
+
+        // FATAL 발견
+        if (line.Contains("FATAL MESSAGE") || line.Contains("*** FATAL"))
         {
-          fatalLineIndices.Add(i);
+          fatalCount++;
+
+          log("\n------------------ [FATAL ERROR CONTEXT] ------------------");
+          // 이전 5줄 출력
+          int prevLineNum = currentLineNumber - previousLines.Count;
+          foreach (var prevLine in previousLines)
+          {
+            log($"   Line {prevLineNum++:D5}: {prevLine}");
+          }
+
+          // FATAL 발생 라인 출력
+          log($">> Line {currentLineNumber:D5}: {line}");
+
+          // 앞으로 5줄 더 출력하도록 타이머 설정
+          linesToPrintAfterFatal = contextRange;
         }
+        // FATAL 이후 5줄 출력 중
+        else if (linesToPrintAfterFatal > 0)
+        {
+          log($"   Line {currentLineNumber:D5}: {line}");
+          linesToPrintAfterFatal--;
+          if (linesToPrintAfterFatal == 0)
+          {
+            log("-----------------------------------------------------------\n");
+          }
+        }
+
+        // 과거 컨텍스트 유지를 위해 원형 버퍼 관리
+        if (previousLines.Count == contextRange)
+        {
+          previousLines.Dequeue();
+        }
+        previousLines.Enqueue(line);
       }
 
-      if (fatalLineIndices.Count == 0)
+      if (fatalCount == 0)
       {
         log($"[통과] Nastran 해석 완료! .f06 파일 내 FATAL 오류가 없습니다.");
-        return true; // 성공
+        return true;
       }
 
-      // FATAL 에러가 발견된 경우
-      log($"[실패] Nastran 해석 실패! .f06 파일에서 {fatalLineIndices.Count}개의 FATAL MESSAGE가 발견되었습니다.");
-
-      int contextRange = 5; // 위아래로 보여줄 줄 수 설정
-
-      foreach (int idx in fatalLineIndices)
-      {
-        log("\n------------------ [FATAL ERROR CONTEXT] ------------------");
-        int startIdx = Math.Max(0, idx - contextRange);
-        int endIdx = Math.Min(lines.Length - 1, idx + contextRange);
-
-        for (int j = startIdx; j <= endIdx; j++)
-        {
-          string prefix = (j == idx) ? ">> " : "   ";
-          log($"{prefix} Line {j + 1:D5}: {lines[j]}");
-        }
-        log("-----------------------------------------------------------\n");
-      }
-
-      return false; // 실패
+      log($"[실패] Nastran 해석 실패! .f06 파일에서 {fatalCount}개의 FATAL MESSAGE가 발견되었습니다.");
+      return false;
     }
   }
 }

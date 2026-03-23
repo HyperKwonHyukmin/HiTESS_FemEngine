@@ -9,3 +9,4 @@ C:\Coding\Csharp\Projects\HiTESS.FemEngine\HiTESS.FemEngine\obj\Debug\net8.0\HiT
 C:\Coding\Csharp\Projects\HiTESS.FemEngine\HiTESS.FemEngine\obj\Debug\net8.0\refint\HiTESS.FemEngine.Core.dll
 C:\Coding\Csharp\Projects\HiTESS.FemEngine\HiTESS.FemEngine\obj\Debug\net8.0\HiTESS.FemEngine.Core.pdb
 C:\Coding\Csharp\Projects\HiTESS.FemEngine\HiTESS.FemEngine\obj\Debug\net8.0\ref\HiTESS.FemEngine.Core.dll
+C:\Coding\Csharp\Projects\HiTESS.FemEngine\HiTESS.FemEngine\obj\Debug\net8.0\HiTESS.FemEngine.Core.sourcelink.json

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HiTESS.FemEngine.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1c13358bb9ede0702561a521c768cb593651c779")]
 [assembly: System.Reflection.AssemblyProductAttribute("HiTESS.FemEngine.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HiTESS.FemEngine.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
