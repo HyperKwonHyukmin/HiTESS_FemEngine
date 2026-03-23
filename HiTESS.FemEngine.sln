@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36623.8 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HiTESS.FemEngine.Core", "HiTESS.FemEngine\HiTESS.FemEngine.Core.csproj", "{4CB05D78-6F07-4B60-B6C9-58111C4724A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HiTESS.FemEngine.Adapter", "HiTESS.FemEngine.Adapter\HiTESS.FemEngine.Adapter.csproj", "{91455F07-403C-41A8-9482-9F0D3BC39BEB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4CB05D78-6F07-4B60-B6C9-58111C4724A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CB05D78-6F07-4B60-B6C9-58111C4724A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CB05D78-6F07-4B60-B6C9-58111C4724A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CB05D78-6F07-4B60-B6C9-58111C4724A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91455F07-403C-41A8-9482-9F0D3BC39BEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91455F07-403C-41A8-9482-9F0D3BC39BEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91455F07-403C-41A8-9482-9F0D3BC39BEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91455F07-403C-41A8-9482-9F0D3BC39BEB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8F8B441E-B608-4B18-B999-3DB9E15BFF90}
+	EndGlobalSection
+EndGlobal

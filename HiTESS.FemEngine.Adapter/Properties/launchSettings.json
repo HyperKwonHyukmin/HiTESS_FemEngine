@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "HiTESS.FemEngine.Adapter": {
+      "commandName": "Project",
+      "commandLineArgs": "C:\\Coding\\Csharp\\Projects\\HiTESS.FemEngine\\testJson\\test_06.json\r\nC:\\Coding\\Csharp\\Projects\\HiTESS.FemEngine\\testJson"
+    }
+  }
+}

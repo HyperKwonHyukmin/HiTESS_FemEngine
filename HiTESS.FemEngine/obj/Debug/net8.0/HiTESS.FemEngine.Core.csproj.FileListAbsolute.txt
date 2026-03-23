@@ -1,0 +1,11 @@
+C:\Coding\Csharp\Projects\HiTESS.FemEngine\HiTESS.FemEngine\obj\Debug\net8.0\HiTESS.FemEngine.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Coding\Csharp\Projects\HiTESS.FemEngine\HiTESS.FemEngine\obj\Debug\net8.0\HiTESS.FemEngine.Core.AssemblyInfoInputs.cache
+C:\Coding\Csharp\Projects\HiTESS.FemEngine\HiTESS.FemEngine\obj\Debug\net8.0\HiTESS.FemEngine.Core.AssemblyInfo.cs
+C:\Coding\Csharp\Projects\HiTESS.FemEngine\HiTESS.FemEngine\obj\Debug\net8.0\HiTESS.FemEngine.Core.csproj.CoreCompileInputs.cache
+C:\Coding\Csharp\Projects\HiTESS.FemEngine\HiTESS.FemEngine\bin\Debug\net8.0\HiTESS.FemEngine.Core.deps.json
+C:\Coding\Csharp\Projects\HiTESS.FemEngine\HiTESS.FemEngine\bin\Debug\net8.0\HiTESS.FemEngine.Core.dll
+C:\Coding\Csharp\Projects\HiTESS.FemEngine\HiTESS.FemEngine\bin\Debug\net8.0\HiTESS.FemEngine.Core.pdb
+C:\Coding\Csharp\Projects\HiTESS.FemEngine\HiTESS.FemEngine\obj\Debug\net8.0\HiTESS.FemEngine.Core.dll
+C:\Coding\Csharp\Projects\HiTESS.FemEngine\HiTESS.FemEngine\obj\Debug\net8.0\refint\HiTESS.FemEngine.Core.dll
+C:\Coding\Csharp\Projects\HiTESS.FemEngine\HiTESS.FemEngine\obj\Debug\net8.0\HiTESS.FemEngine.Core.pdb
+C:\Coding\Csharp\Projects\HiTESS.FemEngine\HiTESS.FemEngine\obj\Debug\net8.0\ref\HiTESS.FemEngine.Core.dll
