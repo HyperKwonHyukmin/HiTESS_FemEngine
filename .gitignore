@@ -11,6 +11,7 @@ desktop.ini
 .idea/
 *.swp
 *.bak
+*.csv
 
 # --- 프로그래밍 언어 및 패키지 매니저 ---
 
